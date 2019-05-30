@@ -1,0 +1,745 @@
+<!doctype html>
+<html class="no-js" lang="">
+   
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+   
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>ROBOMANIA'19</title>
+      <link rel="icon" type="image/x-icon" href="app/themes/rc/img/icons/logo.png" />
+      <link rel="stylesheet" href="app/themes/rc/styles/main.css">
+      <link rel="stylesheet" href="app/themes/rc/styles/textmain.css">
+      <script src="app/themes/rc/scripts/vendor/modernizr.js"></script>
+   </head>
+   <body>
+      <header class="site-header">
+        <a href="#" class="site-logo js-link" data-fn="goToSection" data-prm='["welcome"]'>
+               <img src="logo1.png" width=150px > 
+            </a>
+         <nav class="site-menu">
+            <ul>
+              
+                    <li><a href="mailto:abhishekmishra201996@gmail.com">Contact<span></span></a> <span></span></li>
+                     <li><a href="http://roboticsclub.mmmut.ac.in/index.html" target="_blank">Visit Website<span></span></a></li>
+                    <li><a href="https://goo.gl/maps/QPKEUEA7Nj62" target="_blank">Find Us<span></span></a> <span></span></li>
+            </ul>
+         </nav>
+      </header>
+      <main class="site-wrapper">
+         <!-- WelcomeSection -->
+         <section id="welcome" class="slide">
+            <div id="scene-wrapper"></div>
+            <div class="containermain">
+               <div class="welcome-content container__inner">
+                  <div class="welcome-content__fill">&nbsp;</div>
+                  <div class="welcome-content__desc">
+                     <div class="hero-copy">
+                        <div class="hero-copy__inner">
+                           <div class="t-copy-xs">
+                              <div class="copy-line">
+                                 <div class="t-lined-pre"><span class="t-lined-pre__line"></span> <span>Full Website Coming Soon</span></div>
+                              </div>
+                           </div>
+                           <div class="t-copy-xl">
+                              <div class="glitch" data-text="Strobocops">                                          
+                                                    <div style=" text-align:center; font-family: 'Days One';">                                                
+                                                        <span class="glitch__color glitch__color--red">ROBOMANIA'19</span>
+                                                        <span class="glitch__color glitch__color--blue">ROBOMANIA'19</span>
+                                                        <span class="glitch__color glitch__color--green">ROBOMANIA'19</span>
+                                                        <span class="glitch__main">ROBOMANIA'19</span>
+                                                    </div>    
+                                                    <p id="demo" style="font-family:'Courier New', Courier, monospace;font-size:3.2vw;" ></p>
+                                                </div>
+                                                <br>
+                                                <script>
+
+                                                    var countDownDate = new Date("Mar 9, 2019 00:00:00").getTime();
+
+                                                    var x = setInterval(function() {
+                                                    var now = new Date().getTime();  
+                                                    var distance = countDownDate - now;
+                                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                                    document.getElementById("demo").innerHTML = days + "D " + hours + "H " + minutes + "M " + seconds + "S ";
+    
+                                                        if (distance < 0) {
+                                                            clearInterval(x);
+                                                            document.getElementById("demo").innerHTML = "EXPIRED";
+                                                        }
+                                                    }, 1000);
+                                                </script>
+
+                           </div>
+                        </div>
+                        <div class="buttons-wrapper">
+                           <a href="#" id="view-projects" class="btn js-link" data-fn="goToSection" data-prm='["projects"]'>
+                              <div class="copy-line"><span class="btn__text">EVENTS</span></div>
+                              <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span> <span class="btn__line"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="quote-credit">
+               <div class="t-copy-xs">
+                  <div class="copy-line"><span>* Robotics Club MMMUT</span></div>
+               </div>
+            </div>
+         </section>
+         <!-- /WelcomeSection --><!-- ProjectsSection -->
+         <section id="projects" class="slide">
+            <!-- Decoration -->
+            <div class="diagonals">
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+            </div>
+            <!-- /Decoration --><!-- Content -->
+             <div class="projects-wrapper container">
+                            <div class="project-content container__inner active" id="project-content--ode" style="">
+                                <div class="project-content__shape">
+                                    <div class="shape-mask">
+                                        <img src="app/themes/rc/images/robowar.jpg">
+                                        <div class="shape-mask__screen">
+                                            <div class="outer">
+                                                <div class="inner">
+                                                </div>
+                                            </div>
+                                            <div class="outer">
+                                                <div class="inner"></div>
+                                            </div>
+                                            <div class="outer">
+                                                <div class="inner"></div>
+                                            </div>
+                                        </div>
+                                        <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve"><defs><pattern id="pattern-ode" class="box" patternUnits="userSpaceOnUse" width="537" height="367"><image xlink:href="app/themes/rc/images/ode.jpg" x="0" y="0" width="537" height="367"/></pattern></defs><path fill="url(#pattern-ode)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z"/></svg>
+                                    </div>
+                                </div><!-- HeroCopy -->
+
+                                <div class="project-content__desc hero-copy">
+                                    <div class="hero-copy__inner">
+                                        <div class="t-copy-xs">
+                                            <div class="copy-line">
+                                                <div class="t-lined-pre">
+                                                    <span class="t-lined-pre__line"></span> 
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="t-copy-xl">
+                                            <div class="copy-line">
+                                                <span>ROBOWAR</span>
+                                            </div>
+                                        </div>
+                                        <div class="t-copy-md">
+                                            <p>Let the wars begin! With the increasing popularity of robotic combat sports such as RoboWars and Battle of Bots, many students think about building a fighting robot of their own.</p>
+                                        </div>
+                                    </div>
+                                    <div class="buttons-wrapper">
+                                        <a href="" id="view-projects" class="btn" target="_blank">
+                                            <div class="copy-line">
+                                                <span class="btn__text"></span>
+                                            </div>
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span> 
+                                        </a>
+                                        <a href="" id="view-projects" class="btn" target="_blank">
+                                            <div class="copy-line">
+                                                <span class="btn__text"></span>
+                                            </div>
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span>
+                                        </a>
+                                    </div>
+                                </div><!-- End:HeroCopy -->
+                            </div>
+                            <div class="project-content container__inner" id="project-content--nikoskoulis" style="">
+                                <div class="project-content__shape">
+                                    <div class="shape-mask">
+                                        <img src="app/themes/rc/images/bomb.jpg">
+                                        <div class="shape-mask__screen">
+                                            <div class="outer">
+                                                <div class="inner">
+                                                </div>
+                                            </div>
+                                            <div class="outer">
+                                                <div class="inner"></div>
+                                            </div>
+                                            <div class="outer">
+                                                <div class="inner"></div>
+                                            </div>
+                                        </div>
+                                        <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve"><defs><pattern id="pattern-nikoskoulis" class="box" patternUnits="userSpaceOnUse" width="537" height="367"><image xlink:href="app/themes/rc/images/nikoskoulis.jpg" x="0" y="0" width="537" height="367"/></pattern></defs><path fill="url(#pattern-nikoskoulis)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z"/></svg>
+                                    </div>
+                                </div><!-- HeroCopy -->
+                                <div class="project-content__desc hero-copy">
+                                    <div class="hero-copy__inner">
+                                        <div class="t-copy-xs">
+                                            <div class="copy-line">
+                                                <div class="t-lined-pre">
+                                                    <span class="t-lined-pre__line"></span> 
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="t-copy-xl">
+                                            <div class="copy-line">
+                                                <span>BOMB DIFFUSION</span>
+                                                </div>
+                                            </div>
+                                            <div class="t-copy-md">
+                                                <p>Take a few minutes to hatchet up the tension via that classic struggle over which wire to cut so as to defuse a bomb and avert catastrophe The dilemma of the wire,the bomb and the ticking clock.Plunge yourself into a web of intricate circuits, mind boggling logics and be a part of the electrifying odyssey to realise what separates you from the rest. Come on solve the electrical networks and be a part of Robomania Bomb Diffusion.</p>
+                                            </div>
+                                        </div>
+                                        <div class="buttons-wrapper">
+                                            <a href="" id="view-projects" class="btn" target="_blank">
+                                                <div class="copy-line">
+                                                    <span class="btn__text"></span>
+                                                </div>
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                            </a>
+                                            <a href="" id="view-projects" class="btn" target="_blank">
+                                                <div class="copy-line">
+                                                    <span class="btn__text"></span>
+                                                </div>
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span>
+                                            </a>
+                                        </div>
+                                    </div><!-- End:HeroCopy -->
+                                </div>
+                                <div class="project-content container__inner" id="project-content--hifido" style="">
+                                    <div class="project-content__shape">
+                                        <div class="shape-mask">
+                                            <img src="app/themes/rc/images/lock.jpg">
+                                            <div class="shape-mask__screen">
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                            </div>
+                                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve"><defs><pattern id="pattern-hifido" class="box" patternUnits="userSpaceOnUse" width="537" height="367"><image xlink:href="app/themes/rc/images/hifido.jpg" x="0" y="0" width="537" height="367"/></pattern></defs><path fill="url(#pattern-hifido)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z"/></svg>
+                                        </div>
+                                    </div><!-- HeroCopy -->
+                                    <div class="project-content__desc hero-copy">
+                                        <div class="hero-copy__inner">
+                                            <div class="t-copy-xs">
+                                                <div class="copy-line">
+                                                    <div class="t-lined-pre">
+                                                        <span class="t-lined-pre__line"></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="t-copy-xl">
+                                                <div class="copy-line">
+                                                    <span>SHERLOCKED</span>
+                                                </div>
+                                            </div>
+                                            <div class="t-copy-md">
+                                                <p>A mystery is waiting to be revealed. Step into the shoes of holmes and play detective if you may indulge in this one of its kind puzzle solving jargon and break into the final quest for answer to unwind hidden secrets.</p>
+                                            </div>
+                                        </div>
+                                        <div class="buttons-wrapper">
+                                            <a href="#" id="view-projects" class="btn hidden" target="_blank">
+                                                <div class="copy-line">
+                                                    <span class="btn__text"></span>
+                                                </div>
+                                                <span class="btn__line"></span>
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                            </a>
+                                            <a href="" id="view-projects" class="btn" target="_blank">
+                                                <div class="copy-line">
+                                                    <span class="btn__text"></span>
+                                                </div>
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span>
+                                            </a>
+                                        </div>
+                                    </div><!-- End:HeroCopy -->
+                                </div>
+                                <div class="project-content container__inner" id="project-content--apivita" style="">
+                                    <div class="project-content__shape">
+                                        <div class="shape-mask">
+                                            <img src="app/themes/rc/images/tekken.jpg">
+                                            <div class="shape-mask__screen">
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                            </div>
+                                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve"><defs><pattern id="pattern-apivita" class="box" patternUnits="userSpaceOnUse" width="537" height="367"><image xlink:href="app/themes/rc/images/apivita.jpg" x="0" y="0" width="537" height="367"/></pattern></defs><path fill="url(#pattern-apivita)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z"/></svg>
+                                        </div>
+                                    </div><!-- HeroCopy -->
+                                    <div class="project-content__desc hero-copy">
+                                        <div class="hero-copy__inner">
+                                            <div class="t-copy-xs">
+                                                <div class="copy-line">
+                                                    <div class="t-lined-pre">
+                                                        <span class="t-lined-pre__line"></span> 
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="t-copy-xl">
+                                                <div class="copy-line">
+                                                    <span>ELECTRO TEKKEN</span>
+                                                </div>
+                                            </div>
+                                            <div class="t-copy-md">
+                                                <p>Do you like playing Fighting Games?Do you love Fighting games?? What if you are one of the characters???Playing on grounds of MMMUT as real Raone or Gone This Event is the main attraction of Robomania.You can select your opponent and start playing Tekken virtually on the basis of movements of you hands and legs. Imagine yourself playing the fighting game in real way as if you are playing in fighting arena. Robotics club thus presents all new and different concept of virtual gaming in real way.Get ready to experience Tekken at your hands in Robomania 2019.</p>
+                                            </div>
+                                        </div>
+                                        <div class="buttons-wrapper">
+                                            <a href="" id="view-projects" class="btn" target="_blank">
+                                                <div class="copy-line">
+                                                    <span class="btn__text"></span>
+                                                </div>
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                            </a>
+                                            <a href="#" id="view-projects" class="btn hidden" target="_blank">
+                                                <div class="copy-line">
+                                                    <span class="btn__text"></span>
+                                                </div>
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span>
+                                            </a>
+                                        </div>
+                                    </div><!-- End:HeroCopy -->
+                                </div>
+                                <div class="project-content container__inner" id="project-content--kiryianni" style="">
+                                    <div class="project-content__shape">
+                                        <div class="shape-mask">
+                                            <img src="app/themes/rc/images/laser.jpg">
+                                            <div class="shape-mask__screen">
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                            </div>
+                                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve"><defs><pattern id="pattern-kiryianni" class="box" patternUnits="userSpaceOnUse" width="537" height="367"><image xlink:href="app/themes/rc/images/kiryianni.jpg" x="0" y="0" width="537" height="367"/></pattern></defs><path fill="url(#pattern-kiryianni)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z"/></svg>
+                                        </div>
+                                    </div><!-- HeroCopy -->
+                                    <div class="project-content__desc hero-copy">
+                                        <div class="hero-copy__inner">
+                                            <div class="t-copy-xs">
+                                                <div class="copy-line">
+                                                    <div class="t-lined-pre">
+                                                        <span class="t-lined-pre__line"></span> 
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="t-copy-xl">
+                                                <div class="copy-line">
+                                                    <span>LASER STRIKE</span>
+                                                </div>
+                                            </div>
+                                                <div class="t-copy-md">
+                                                    <p>If you spend hours playing counter strike, Laser Strike is the one for you. A simulation of counter strike, it leaves you thrilled and amazed. Two teams will be fighting simultaneously with the help of a sensor kit and a laser kit and members of one team will have to kill the members of the enemy team.</p>
+                                                </div>
+                                        </div>
+                                        <div class="buttons-wrapper">
+                                            <a href="" id="view-projects" class="btn" target="_blank">
+                                                <div class="copy-line">
+                                                    <span class="btn__text"></span>
+                                                </div>
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                            </a>
+                                            <a href="" id="view-projects" class="btn" target="_blank">
+                                                <div class="copy-line">
+                                                    <span class="btn__text"></span>
+                                                </div>
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span>
+                                            </a>
+                                        </div>
+                                    </div><!-- End:HeroCopy -->
+                                </div>
+                            
+                            
+                            ​ <div class="project-content container__inner" id="project-content--kiryiann" style="">
+                                    <div class="project-content__shape">
+                                        <div class="shape-mask">
+                                            <img src="app/themes/rc/images/art.jpg">
+                                            <div class="shape-mask__screen">
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                            </div>
+                                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve"><defs><pattern id="pattern-kiryianni" class="box" patternUnits="userSpaceOnUse" width="537" height="367"><image xlink:href="app/themes/rc/images/kiryianni.jpg" x="0" y="0" width="537" height="367"/></pattern></defs><path fill="url(#pattern-kiryianni)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z"/></svg>
+                                        </div>
+                                    </div>
+                           
+                           <!-- HeroCopy -->
+                                 <div class="project-content__desc hero-copy">
+                                    <div class="hero-copy__inner">
+                                        <div class="t-copy-xs">
+                                            <div class="copy-line">
+                                                <div class="t-lined-pre">
+                                                    <span class="t-lined-pre__line"></span> 
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="t-copy-xl">
+                                            <div class="copy-line">
+                                                <span>ELECTRONIC ART</span>
+                                            </div>
+                                        </div>
+                                        <div class="t-copy-md">
+                                             <p>The True Work Of Art Is But A Shadow Of Perfection" Its time to prove your creativity in the world of electronics.Enjoy the pleasure of sketching your imagination on paper by using variety of electronic components.Grasp the chance of being an artist of creativity As we know.Art is the most intense mode of individualism that the world has known.</p>
+                                        </div>
+                                    </div>
+                                    <div class="buttons-wrapper">
+                                        <a href="" id="view-projects" class="btn" target="_blank">
+                                            <div class="copy-line">
+                                                <span class="btn__text"></span>
+                                            </div>
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span> 
+                                        </a>
+                                        <a href="" id="view-projects" class="btn" target="_blank">
+                                            <div class="copy-line">
+                                                <span class="btn__text"></span>
+                                            </div>
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span> 
+                                            <span class="btn__line"></span>
+                                        </a>
+                                    </div>
+                                </div><!-- End:HeroCopy -->
+                            </div>
+                            <div class="project-content container__inner" id="project-content--kiryian" style="">
+                                    <div class="project-content__shape">
+                                        <div class="shape-mask">
+                                            <img src="app/themes/rc/images/chres.jpg">
+                                            <div class="shape-mask__screen">
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                            </div>
+                                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve"><defs><pattern id="pattern-kiryianni" class="box" patternUnits="userSpaceOnUse" width="537" height="367"><image xlink:href="app/themes/rc/images/kiryianni.jpg" x="0" y="0" width="537" height="367"/></pattern></defs><path fill="url(#pattern-kiryianni)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z"/></svg>
+                                        </div>
+                                    </div><!-- HeroCopy -->
+                                    <div class="project-content__desc hero-copy">
+                                        <div class="hero-copy__inner">
+                                            <div class="t-copy-xs">
+                                                <div class="copy-line">
+                                                    <div class="t-lined-pre">
+                                                        <span class="t-lined-pre__line"></span> 
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="t-copy-xl">
+                                                <div class="copy-line">
+                                                    <span>ELECTRONIC CHESS</span>
+                                                </div>
+                                            </div>
+                                                <div class="t-copy-md">
+                                                    <p>Such a game decoys played with endeavour and interest. Get ready to compete with the opponent. Lets change the doomsday scenerio about the people loosing interest in chess.We welcome you with one of the most popular event i.e Electronic Chess,so lets confront the human creativity which was more paramount. track the path through the glowing LED's to beat your opponent.Let be the czar of the black and white battlefield.</p>
+                                                </div>
+                                        </div>
+                                        <div class="buttons-wrapper">
+                                            <a href="" id="view-projects" class="btn" target="_blank">
+                                                <div class="copy-line">
+                                                    <span class="btn__text"></span>
+                                                </div>
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                            </a>
+                                            <a href="" id="view-projects" class="btn" target="_blank">
+                                                <div class="copy-line">
+                                                    <span class="btn__text"></span>
+                                                </div>
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span> 
+                                                <span class="btn__line"></span>
+                                            </a>
+                                        </div>
+                                    </div><!-- End:HeroCopy -->
+                                </div>
+                            
+                        <div class="project-content container__inner" id="project-content--kiryia" style="">
+                                    <div class="project-content__shape">
+                                        <div class="shape-mask">
+                                            <img src="app/themes/rc/images/ref.jpg">
+                                            <div class="shape-mask__screen">
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                                <div class="outer">
+                                                    <div class="inner"></div>
+                                                </div>
+                                            </div>
+                                            <svg class="shape-svg" x="0px" y="0px" width="488.811px" height="305.93px" viewBox="0 0 488.811 305.93" xml:space="preserve"><defs><pattern id="pattern-kiryianni" class="box" patternUnits="userSpaceOnUse" width="537" height="367"><image xlink:href="app/themes/rc/images/kiryianni.jpg" x="0" y="0" width="537" height="367"/></pattern></defs><path fill="url(#pattern-kiryianni)" d="M124.688,305.93H0L305.93,0h124.688L124.688,305.93z M257.328,22.919h-80.172l-127.06,127.06h80.173 L257.328,22.919z M488.811,82.475h-116.9L171.435,282.951h116.9L488.811,82.475z"/></svg>
+                                        </div>
+                                    </div><!-- HeroCopy -->
+                                    <div class="project-content__desc hero-copy">
+                                        <div class="hero-copy__inner">
+                                            <div class="t-copy-xs">
+                                                <div class="copy-line">
+                                                    <div class="t-lined-pre">
+                                                        <span class="t-lined-pre__line"></span> 
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="t-copy-xl">
+                                                <div class="copy-line">
+                                                    <span>REFLEX</span>
+                                                </div>
+                                            </div>
+                                                <div class="t-copy-md">
+                                                    <p>The ink of scholar is more holy than blood of the martyr" Let the paper be your kingdom and you be the ruler.Be proficient in maintaining your quant and general knowledge.Welcome the knowledge with your open hands and check the ability through invincible event called "Reflex" which will boost up your mind with enthusiasm.</p>
+                                                </div>
+                                        </div>
+                     <div class="buttons-wrapper">
+                        <a href="" id="view-projects" class="btn" target="_blank">                          
+                           <span class="btn__line"></span> 
+                           <span class="btn__line"></span> 
+                           <span class="btn__line"></span> 
+                           <span class="btn__line"></span> 
+                        </a>
+                        <a href="" id="view-projects" class="btn" target="_blank">                           
+                           <span class="btn__line"></span> 
+                           <span class="btn__line"></span> 
+                           <span class="btn__line"></span> 
+                           <span class="btn__line"></span>
+                        </a>
+                     </div>
+                  </div>
+                  <!-- End:HeroCopy -->
+               </div>
+            </div>
+            <!-- /Content -->
+            <nav class="projects-nav">
+               <a href="#" class="arrow-next">
+                  <svg id="svg-arrow-next" x="0px" y="0px" width="29.2px" height="29.2px" viewBox="0 0 29.2 29.2" xml:space="preserve">
+                     <line class="arrow-line-diagonal" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="28.403" y1="0.734" x2="1.038" y2="28.1"/>
+                     <line class="arrow-line-vertical" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1.038" y1="18.288" x2="1.038" y2="29.2"/>
+                     <line class="arrow-line-horizontal" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="10.912" y1="28.1" x2="0" y2="28.1"/>
+                  </svg>
+               </a>
+               <a href="#" class="arrow-prev">
+                  <svg id="svg-arrow-prev" x="0px" y="0px" width="29.2px" height="29.2px" viewBox="0 0 29.2 29.2" xml:space="preserve">
+                     <line class="arrow-line-diagonal" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="28.403" y1="0.734" x2="1.038" y2="28.1"/>
+                     <line class="arrow-line-vertical" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1.038" y1="18.288" x2="1.038" y2="29.2"/>
+                     <line class="arrow-line-horizontal" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="10.912" y1="28.1" x2="0" y2="28.1"/>
+                  </svg>
+               </a>
+            </nav>
+            <a href="#" id="about-link" class="t-link-vertical js-link" data-fn="goToSection" data-prm='["about"]'>
+                                <div class="copy-line">
+                                    <span>About</span>
+                                </div>
+                            </a>
+                        </section><!-- /ProjectsSection --><!-- AboutSection -->
+                        <section id="about" class="slide"><!-- Decoration -->
+                            <div class="diagonals">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div><!-- /Decoration -->
+                            <div class="container">
+                                <div class="about-content container__inner">
+                                    <div class="about-content__wrapper">
+                                        <div class="about-content__left">
+                                            <div class="t-copy-xs">
+                                                <div class="copy-line">
+                                                    <div class="t-lined-pre t-lined-pre--white">
+                                                        <span class="t-lined-pre__line"></span> 
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="t-copy-xl">
+                                                <div class="copy-line">
+                                                    <span>ABOUT</span>
+                                                </div>
+                                                <div class="copy-line">
+                                                    <span>ROBOTICS CLUB,</span>
+                                                </div>
+                                                <div class="copy-line">
+                                                    <span>MMMUT</span>
+                                                </div>
+                                            </div>
+                                            <div class="t-copy-md">
+                                                <p>The club carries forward its vision and ideas by continuously creating hotspots where pool of technical knowledge meets via workshops and an annually organized event ROBOMANIA where the club members present events to the students which require plethora of practical implementation of concepts.</p>
+                                            </div>
+                                        </div>
+                                        <div class="about-content__right">
+                                            <div class="t-copy-xs">
+                                        
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" id="back-link" class="js-link t-link-vertical" data-fn="goToSection" data-prm='["projects"]'>
+                                <div class="copy-line">
+                                    <span>Back</span>
+                                </div>
+                            </a>
+                        </section><!-- /AboutSection -->
+         <div id="site-intro" class="site-intro">
+            <div class="intro-half intro-half--left">
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+            </div>
+            <div class="intro-half intro-half--right">
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+               <div class="intro-half__fill"></div>
+            </div>
+            <div class="site-intro__line">
+               <div class="site-intro__line__inner"></div>
+            </div>
+            <div class="site-intro__logo">
+               <img src="mmm.png" width=150px height=150px  style="position: static" >
+            </div>
+         </div>
+         <div class="stripes">
+            <div class="stripe">
+               <div class="stripe__inner"></div>
+            </div>
+            <div class="stripe">
+               <div class="stripe__inner"></div>
+            </div>
+            <div class="stripe">
+               <div class="stripe__inner"></div>
+            </div>
+         </div>
+      </main>
+      
+      <footer class="site-footer">
+         <div class="site-footer__links">
+           
+             <nav class="social-links">
+                                <span>Social</span> 
+                                <span class="line"></span>
+                                <ul>
+                                    <li>
+                                        <a href="https://twitter.com/rc" target="_blank">
+                                        <span class="#"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/robotics.mmmut/" target="_blank">
+                                            <span class="icon-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.behance.net/rc" target="_blank">
+                                            <span class="#"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/robomania18?utm_source=ig_profile_share&igshid=jifym4lgagju" target="_blank">
+                                            <span class="icon-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+         </div>
+        
+      </footer>
+      <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+         function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+         e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+         e.src='../www.google-analytics.com/analytics.js';
+         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+         ga('create','UA-36659525-1');ga('send','pageview');
+      </script><script src="app/themes/rc/scripts/vendor.js"></script><script src="app/themes/rc/scripts/app.js"></script>
+   </body>
+     
+</html>
